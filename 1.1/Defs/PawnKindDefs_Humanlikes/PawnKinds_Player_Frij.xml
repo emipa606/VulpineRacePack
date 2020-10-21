@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Abstract="True" Name="BaseFrijjidPawnKind">
+    <race>Alien_Frijjid</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BaseFrijjidPawnKind">
+    <defName>Frijjid</defName>
+    <label>colonist</label>
+    <defaultFactionType>FrijjidPlayerColony</defaultFactionType>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>FennexBackstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BaseFrijjidPawnKind">
+    <defName>FrijjidTribe</defName>
+    <label>tribal</label>
+    <defaultFactionType>FrijjidPlayerColonyTribalx</defaultFactionType>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>VpTBackstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>800</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+</Defs>

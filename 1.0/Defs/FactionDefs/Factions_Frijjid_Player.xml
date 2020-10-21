@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Abstract="True" Name="FrijjidFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef Parent="FrijjidFactionBase">
+    <defName>FrijjidPlayerColony</defName>
+    <label>Frijjid Arcology</label>
+    <description>Your own Frijjid Colony.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Frijjid</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+      <li>FennexBackstory</li>
+    </backstoryCategories>
+    <homeIconPath>World/FrijjidBaseIcon</homeIconPath>
+    <expandingIconTexture>World/FrijjidBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>FennexHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  <FactionDef Parent="FennexFactionBase">
+    <defName>FrijjidPlayerColonyTribal</defName>
+    <label>Frijjid Tribal-like</label>
+    <description>Fennex semi-tribal start. (No research done, but high tech level)</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Frijjid</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+      <li>FennexBackstory</li>
+    </backstoryCategories>
+    <homeIconPath>World/FrijjidBaseIcon</homeIconPath>
+    <expandingIconTexture>World/FrijjidBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>FennexHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+  </FactionDef>
+  <FactionDef Parent="FennexFactionBase">
+    <defName>FrijjidPlayerColonyTribalx</defName>
+    <label>Frijjid Tribe</label>
+    <description>Frijjid tribal start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>FrijjidTribe</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>VpTBackstory</li>
+    </backstoryCategories>
+    <homeIconPath>World/FrijjidBaseIcon</homeIconPath>
+    <expandingIconTexture>World/FrijjidBaseIcon</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>FennexHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+  </FactionDef>
+</Defs>

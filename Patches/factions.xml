@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+    <!-- Outlander "normal" group -->
+    <value>
+      <FrijjidSecurityGuard>3</FrijjidSecurityGuard>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <FennexSecurityGuard>3</FennexSecurityGuard>
+      <FennexStalker>1</FennexStalker>
+      <FrijjidStalker>1</FrijjidStalker>
+      <!-- The more rare, the lower your points should be -->
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
+    <!-- Outlander Caravan guard group -->
+    <value>
+      <FrijjidSecurityGuard>3</FrijjidSecurityGuard>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <FennexSecurityGuard>3</FennexSecurityGuard>
+      <FennexStalker>1</FennexStalker>
+      <FrijjidStalker>1</FrijjidStalker>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+    <!-- Outlander base group -->
+    <value>
+      <FrijjidSecurityGuard>3</FrijjidSecurityGuard>
+      <!-- Pawnkinds from your race, keep points down low to avoid making your pawns a majority -->
+      <FennexSecurityGuard>3</FennexSecurityGuard>
+      <FennexStalker>1</FennexStalker>
+      <FrijjidStalker>1</FrijjidStalker>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat" and commonality="100"]/options</xpath>
+    <!-- Pirate "normal" group -->
+    <value>
+      <FennexAssassinPIR>1</FennexAssassinPIR>
+      <FrijjidAssassinPIR>1</FrijjidAssassinPIR>
+      <FennexAgentPIR>2</FennexAgentPIR>
+      <FrijjidAgentPIR>2</FrijjidAgentPIR>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Combat" and commonality="30"]/options</xpath>
+    <!-- Pirate "normal" melee only group -->
+    <value>
+      <FennexMeleePIR>3</FennexMeleePIR>
+      <FrijjidMeleePIR>3</FrijjidMeleePIR>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+    <!-- Pirate base group -->
+    <value>
+      <FennexAssassinPIR>1</FennexAssassinPIR>
+      <FrijjidAssassinPIR>1</FrijjidAssassinPIR>
+      <FennexAgentPIR>2</FennexAgentPIR>
+      <FrijjidAgentPIR>2</FrijjidAgentPIR>
+      <FennexMeleePIR>1</FennexMeleePIR>
+      <FrijjidMeleePIR>1</FrijjidMeleePIR>
+    </value>
+  </Operation>
+</Patch>

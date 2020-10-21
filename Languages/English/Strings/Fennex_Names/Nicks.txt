@@ -51,3 +51,10 @@ Cypher
 Spy-hunter
 Mockingbird
 Agent-47
+Secret
+'Smiley'
+Widow
+G-Man
+Snoop
+Ice
+Kold
