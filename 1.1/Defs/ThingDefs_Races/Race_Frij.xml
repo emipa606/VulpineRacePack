@@ -207,6 +207,8 @@
           <li>KnowButcheredHumanlikeCorpse</li>
           <li>AteHumanlikeMeatDirect</li>
           <li>AteHumanlikeMeatAsIngredient</li>
+          <li>AteInsectMeatDirect</li>
+          <li>AteInsectMeatAsIngredient</li>
         </cannotReceiveThoughts>
       </thoughtSettings>
     </alienRace>
