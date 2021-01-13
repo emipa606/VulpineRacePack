@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MainButtonDef[defName="Achievements"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementTabDef>
+              <defName>Mlie_Continued</defName>
+              <label>Continued Mods</label>
+            </AchievementsExpanded.AchievementTabDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_DesertDweller</defName>
+              <label>Desert Dweller</label>
+              <description>Have one Fennex colonist</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Fennex</key>
+                    <value>1</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_DesertDweller</texPath>
+              <points>10</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_FromTheSandsTheyCome</defName>
+              <label>From the Sands they come</label>
+              <description>Have three Fennex colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Fennex</key>
+                    <value>3</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_FromTheSandsTheyCome</texPath>
+              <points>20</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_TheWholeDen</defName>
+              <label>The whole Den</label>
+              <description>Have ten Fennex colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Fennex</key>
+                    <value>10</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_TheWholeDen</texPath>
+              <points>50</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_ArcticDweller</defName>
+              <label>Arctic Dweller</label>
+              <description>Have one Frijjid colonist</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Frijjid</key>
+                    <value>1</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_ArcticDweller</texPath>
+              <points>10</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_FromTheSnowTheyCome</defName>
+              <label>From the Snow they come</label>
+              <description>Have three Frijjid colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Frijjid</key>
+                    <value>3</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_FromTheSnowTheyCome</texPath>
+              <points>20</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef>
+              <defName>Vulpine_TheWholeBurrow</defName>
+              <label>The whole Burrow</label>
+              <description>Have ten Frijjid colonists</description>
+              <tracker Class="AchievementsExpanded.RaceDefTracker">
+                <raceDefs>
+                  <li>
+                    <key>Alien_Frijjid</key>
+                    <value>10</value>
+                  </li>
+                </raceDefs>
+              </tracker>
+              <texPath>Achievements/Vulpine_TheWholeBurrow</texPath>
+              <points>50</points>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <IncidentDef>
+              <defName>Vulpine_FennexJoinsTheColony</defName>
+              <label>Fennex Joins the Colony</label>
+              <category>Misc</category>
+              <targetTags>
+                <li>Map_PlayerHome</li>
+              </targetTags>
+              <workerClass>IncidentWorker_WandererJoin</workerClass>
+              <letterLabel>Fennex joins: {PAWN_nameDef}</letterLabel>
+              <letterText>A {PAWN_title} named {PAWN_nameDef} has arrived and is joining the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing.</letterText>
+              <baseChance>0</baseChance>
+              <pawnKind>Fennex</pawnKind>
+            </IncidentDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.Reward_MapIncident>
+              <defName>Vulpine_AFennexJoinsTheColony</defName>
+              <label>A Fennex Joins the Colony</label>
+              <cost>150</cost>
+              <incident>Vulpine_FennexJoinsTheColony</incident>
+            </AchievementsExpanded.Reward_MapIncident>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <IncidentDef>
+              <defName>Vulpine_FrijjidJoinsTheColony</defName>
+              <label>Frijjid Joins the Colony</label>
+              <category>Misc</category>
+              <targetTags>
+                <li>Map_PlayerHome</li>
+              </targetTags>
+              <workerClass>IncidentWorker_WandererJoin</workerClass>
+              <letterLabel>Frijjid joins: {PAWN_nameDef}</letterLabel>
+              <letterText>A {PAWN_title} named {PAWN_nameDef} has arrived and is joining the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing.</letterText>
+              <baseChance>0</baseChance>
+              <pawnKind>Frijjid</pawnKind>
+            </IncidentDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.Reward_MapIncident>
+              <defName>Vulpine_AFrijjidJoinsTheColony</defName>
+              <label>A Frijjid Joins the Colony</label>
+              <cost>150</cost>
+              <incident>Vulpine_FrijjidJoinsTheColony</incident>
+            </AchievementsExpanded.Reward_MapIncident>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
