@@ -18,7 +18,16 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
+              <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_DesertDweller</defName>
               <label>Desert Dweller</label>
               <description>Have one Fennex colonist</description>
@@ -32,14 +41,13 @@
               </tracker>
               <texPath>Achievements/Vulpine_DesertDweller</texPath>
               <points>10</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_FromTheSandsTheyCome</defName>
               <label>From the Sands they come</label>
               <description>Have three Fennex colonists</description>
@@ -53,14 +61,13 @@
               </tracker>
               <texPath>Achievements/Vulpine_FromTheSandsTheyCome</texPath>
               <points>20</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_TheWholeDen</defName>
               <label>The whole Den</label>
               <description>Have ten Fennex colonists</description>
@@ -74,14 +81,13 @@
               </tracker>
               <texPath>Achievements/Vulpine_TheWholeDen</texPath>
               <points>50</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_ArcticDweller</defName>
               <label>Arctic Dweller</label>
               <description>Have one Frijjid colonist</description>
@@ -95,14 +101,13 @@
               </tracker>
               <texPath>Achievements/Vulpine_ArcticDweller</texPath>
               <points>10</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_FromTheSnowTheyCome</defName>
               <label>From the Snow they come</label>
               <description>Have three Frijjid colonists</description>
@@ -116,14 +121,13 @@
               </tracker>
               <texPath>Achievements/Vulpine_FromTheSnowTheyCome</texPath>
               <points>20</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>Vulpine_TheWholeBurrow</defName>
               <label>The whole Burrow</label>
               <description>Have ten Frijjid colonists</description>
@@ -137,7 +141,6 @@
               </tracker>
               <texPath>Achievements/Vulpine_TheWholeBurrow</texPath>
               <points>50</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
