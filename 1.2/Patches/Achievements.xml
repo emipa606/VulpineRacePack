@@ -171,8 +171,9 @@
           <value>
             <AchievementsExpanded.Reward_MapIncident>
               <defName>Vulpine_AFennexJoinsTheColony</defName>
-              <label>A Fennex Joins the Colony</label>
+              <label>A Fennex Joins</label>
               <cost>150</cost>
+              <tab>Mlie_Continued</tab>
               <incident>Vulpine_FennexJoinsTheColony</incident>
             </AchievementsExpanded.Reward_MapIncident>
           </value>
@@ -200,8 +201,9 @@
           <value>
             <AchievementsExpanded.Reward_MapIncident>
               <defName>Vulpine_AFrijjidJoinsTheColony</defName>
-              <label>A Frijjid Joins the Colony</label>
+              <label>A Frijjid Joins</label>
               <cost>150</cost>
+              <tab>Mlie_Continued</tab>
               <incident>Vulpine_FrijjidJoinsTheColony</incident>
             </AchievementsExpanded.Reward_MapIncident>
           </value>
