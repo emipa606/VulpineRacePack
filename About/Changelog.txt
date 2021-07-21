@@ -1,5 +1,8 @@
 # Changelog for VulpineRacePack
 
+1.0.11.0 - Added confiurable at game-start option
+
+
 1.0.10.0 - Republish since the HAR framework changed how hair and beards are coded
 
 
