@@ -34,4 +34,4 @@ The Fenii and Frijjid are Vulpine races based on Fennec (Vulpes/Fennecus Zerpa) 
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2263865049]Last updated 2023-07-09
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2263865049]Last updated 2023-08-18
